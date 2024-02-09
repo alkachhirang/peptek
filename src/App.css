@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  scroll-behavior: smooth !important;
+}
+/*--------------------------slick-slider------------------------*/
+
+.slick-slider .slick-dots li.slick-active button:before {
+  border: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:before {
+  color: transparent !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slick-dots li button:before {
+  width: 14.28px !important;
+  height: 14.28px !important;
+  border-radius: 50% !important;
+  border: 0.88px solid #b7b7b7 !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f59330 !important;
+  width: 14.28px !important;
+  height: 14.28px !important;
+  font-size: 17px !important;
+  top: -2px !important;
+}
+
+.back_to_top {
+  -webkit-animation: mover 3000ms infinite ease-in-out !important;
+  animation: mover 3000ms infinite ease-in-out !important;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0px);
+  }
+
+  70% {
+    transform: translateY(-7px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image_animation {
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
 }
-
-.App-link {
-  color: #61dafb;
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
