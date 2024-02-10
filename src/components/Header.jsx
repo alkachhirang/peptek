@@ -23,9 +23,9 @@ const Header = () => {
             <img src={Corner4} alt="Corner4" className='absolute  right-0 bottom-0 max-w-[200px] sm:max-w-[250px] md:max-w-[330px] lg:max-w-[450px] xl:max-w-[660px] 3xl:max-w-[816px] w-full' />
             <div className='container xl:max-w-[1662px] mx-auto xl:px-6 px-[23px]'>
                 <div className='flex justify-between items-center relative z-[4] sm:pt-[24px] pt-[8px] xl:pt-[0]'>
-                    <div className='2xl:translate-y-[80px] xl:translate-y-[42px]'>
+                    <a href='' className='2xl:translate-y-[80px] xl:translate-y-[42px]'>
                         <img src={Navlogo} alt="Navlogo" className='2xl:max-w-[301px] xl:max-w-[250px] md:max-w-[110px] sm:max-w-[100px] max-w-[52.32px] w-full cursor-pointer' />
-                    </div>
+                    </a>
                     <div>
                         <ul className={`${nav ? "left-[-100%]" : "left-0 max-xl:bg-orange-300 "} flex items-center  gap-[50px] 2xl:gap-[72px] z-[11] flex-row max-xl:fixed max-xl:flex-col top-0 max-xl:w-full max-xl:h-full max-xl:min-h-screen max-xl:justify-center transition-all ease-linear duration-300}`}>
                             <li ><a onClick={() => setNav(!nav)} href='#SEHEDULE' className='m-0 font-normal text-[24px] text-[#1A1A1A] leading-[36px] hover:after:w-[72%] after:mx-auto after:right-0 after:items-center after:w-0 after:absolute after:bg-[#1A1A1A] after:h-[2px] relative after:left-[0] after:bottom-[-2px] after:rounded-[10px] after:transition-all after:duration-300 after:ease-linear'>SEHEDULE</a></li>
