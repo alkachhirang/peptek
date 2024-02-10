@@ -2,7 +2,7 @@ import React from 'react'
 
 const Confrence = () => {
     return (
-        <div className='lg:translate-y-[66px]'>
+        <div className='lg:translate-y-[66px] relative z-[2]'>
             <div className='lg:max-w-[1435px] lg:container lg:mx-auto lg:px-6 max-lg:bg-[#F59330] max-sm:pt-[33px] max-sm:pb-[50px] max-lg:py-[70px]' data-aos="fade-down">
                 <div className='lg:rounded-[100px] bg-[#F59330] max-lg:container px-[23px] lg:pt-[30px] lg:pb-[32px] max-lg:mx-auto lg:pr-[45px] lg:pl-[45px] xl:pl-[96px]'>
                     <div className='flex max-lg:flex-col gap-[8px] items-center justify-between'>
