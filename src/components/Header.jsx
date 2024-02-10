@@ -11,9 +11,9 @@ import Corner4 from '../assets/images/png/hero-corner4.png';
 const Header = () => {
     const [nav, setNav] = useState(true)
     if (nav === false) {
-        document.body.classList.add("overflow-hidden");
+        document.body.classList.add("max-xl:overflow-hidden");
     } else {
-        document.body.classList.remove("overflow-hidden");
+        document.body.classList.remove("max-xl:overflow-hidden");
     }
     return (
         <div className='relative'>
